@@ -6,15 +6,11 @@
 
 header{
     display: flex;
-    min-height: 10vh;
+    min-height: 80px;
     background-color: #24252A;
     justify-content: center;
     align-items: center;
     color: white;
-}
-
-#add-book{
-    margin-right: 20px;
 }
 
 .main-container{
@@ -23,7 +19,7 @@ header{
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    ". library .";
+    ". library right-panel";
 }
 
 .library{
@@ -65,4 +61,43 @@ header{
 
 .search button:hover{
     background-color: #41575D;
+}
+
+.right-panel{
+    grid-area: right-panel;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr 1fr;
+}
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#add-book{
+    padding: 9px 50px;
+    width: auto;
+    border-radius: 6px;
+    background-color: #24252A;
+    color: white;
+    border: 1px solid #41575D;
+    font-weight: bold;
+}
+
+#add-book:hover{
+    background-color: #41575D;
+}
+
+.modal-container{
+    position: absolute;
+}
+
+.modal{
+    margin: auto auto;
+    width: 500px;
+    height: 500px;
 }
