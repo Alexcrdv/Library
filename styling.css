@@ -81,6 +81,7 @@ header{
 #add-book{
     padding: 9px 50px;
     width: auto;
+    text-wrap: nowrap;
     border-radius: 6px;
     background-color: #24252A;
     color: white;
@@ -100,4 +101,37 @@ header{
     margin: auto auto;
     width: 500px;
     height: 500px;
+}
+
+.modal-container form{
+    display: flex;
+    justify-content: space-around;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-radius: 10px;
+    border-color: #24252A;
+    height: 400px;
+    width: 250px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.delete{
+    padding: 9px 50px;
+    width: auto;
+    border-radius: 6px;
+    background-color: #24252A;
+    color: white;
+    border: 1px solid #41575D;
+    font-weight: bold;
+}
+
+.delete:hover{
+    background-color: #5d4141;
 }
