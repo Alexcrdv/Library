@@ -26,7 +26,7 @@ header{
     display: grid;
     grid-area: library;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .5fr 1fr 1fr;
+    grid-template-rows: 200px 1fr 1fr;
     grid-template-areas: 
     "search search search"
     ". . ."
@@ -69,7 +69,7 @@ header{
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr;
-    grid-template-rows: .5fr 1fr 1fr;
+    grid-template-rows: 200px 1fr 1fr;
 }
 
 .add{
@@ -93,33 +93,34 @@ header{
     background-color: #41575D;
 }
 
-.modal-container{
-    position: absolute;
-}
-
 .modal{
-    margin: auto auto;
-    width: 500px;
-    height: 500px;
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px #d1d1d1;
+    border-style: none;
 }
 
-.modal-container form{
+.modal form{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 .book{
     display: flex;
     flex-direction: column;
-    border: solid;
     border-radius: 10px;
-    border-color: #24252A;
+    border-top: 10px solid #24252A;
+    border-bottom: 10px solid #24252A;
     height: 400px;
     width: 250px;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
     margin: 20px;
+    box-shadow: 0px 0px 14px #d1d1d1;
 }
 
 .delete{

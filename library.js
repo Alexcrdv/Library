@@ -20,6 +20,7 @@ addBookToLibrary("The Hobbit", "JRR Tolkien", 265, "Unread")
 addBookToLibrary("Their Eyes Were Watching God", "Zora N Hurston", 231, "Read")
 
 
+
 function displayBooks(){
     for (let i = 0; i < myLibrary.length; i++){
         const bookDiv = document.createElement('div');
@@ -52,22 +53,20 @@ function displayBooks(){
         bookDiv.appendChild(read);
         bookDiv.appendChild(deleteBtn);
         Library.appendChild(bookDiv);
-        console.log('success :)')
     }
 }
 
 displayBooks();
 
 //Modal
-
 const modal = document.querySelector('#modal');
 const add = document.querySelector('#add-book');
-const close = document.querySelector('#cancel');
+const cancel = document.querySelector('#cancel');
 
 add.addEventListener('click', () => {
     modal.showModal();
 })
 
-close.addEventListener('click', () => {
+cancel.addEventListener('click', () => {
     modal.close();
 })
