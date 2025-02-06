@@ -97,7 +97,7 @@ header{
     margin: auto;
     height: 250px;
     width: 250px;
-    padding: 25px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 14px #d1d1d1;
     border-style: none;
@@ -106,6 +106,53 @@ header{
 .modal form{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+}
+
+.modal form div{
+    margin: 10px;
+}
+
+.form-buttons{
+    align-self: center;
+}
+
+.form-buttons button{
+    padding: 9px 20px;
+    width: auto;
+    text-wrap: nowrap;
+    border-radius: 6px;
+    background-color: #24252A;
+    color: white;
+    border: 1px solid #41575D;
+    font-weight: bold;
+}
+
+#title{
+    height: 20px;
+    width: 160px;
+    border-radius: 6px;
+    border: 1px solid #24252A;
+    background-color: white;
+    padding-left: 10px;
+}
+
+#author{
+    height: 20px;
+    width: 160px;
+    border-radius: 6px;
+    border: 1px solid #24252A;
+    background-color: white;
+    padding-left: 10px;
+}
+
+#number-pages{
+    height: 20px;
+    width: 60px;
+    border-radius: 6px;
+    border: 1px solid #24252A;
+    background-color: white;
+    padding-left: 10px;
 }
 
 .book{

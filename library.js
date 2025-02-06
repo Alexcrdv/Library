@@ -20,7 +20,6 @@ addBookToLibrary("The Hobbit", "JRR Tolkien", 265, "Unread")
 addBookToLibrary("Their Eyes Were Watching God", "Zora N Hurston", 231, "Read")
 
 
-
 function displayBooks(){
     for (let i = 0; i < myLibrary.length; i++){
         const bookDiv = document.createElement('div');
